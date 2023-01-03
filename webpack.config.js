@@ -13,10 +13,8 @@ module.exports = {
   },
   module: {
     rules: [
-      {
-        test: /\.tsx?$/,
-        loader: "awesome-typescript-loader",
-      },
+      // all files with a `.ts`, `.cts`, `.mts` or `.tsx` extension will be handled by `ts-loader`
+      { test: /\.([cm]?ts|tsx)$/, loader: "ts-loader" },
     ],
   },
   plugins: [],
@@ -24,5 +22,8 @@ module.exports = {
     filename: "app.js",
     path: path.join(__dirname, "dist"),
     publicPath: "/dist",
+  },
+  devServer: {
+    static: __dirname,
   },
 };
