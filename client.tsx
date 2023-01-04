@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import GuGuDan from "./GuGuDan";
+import NumberBaseball from "./NumberBaseball";
 import WordRelay from "./WordRelay";
 
 // import { hot } from 'react-hot-loader/root';
@@ -15,4 +16,4 @@ import WordRelay from "./WordRelay";
 //     </StoreProvider>,
 //     document.querySelector('#root')
 // );
-ReactDOM.render(<WordRelay />, document.querySelector("#root"));
+ReactDOM.render(<NumberBaseball />, document.querySelector("#root"));
